@@ -24,10 +24,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "dev:docs": "cd docs && npm start && cd ..",
-    "install:docs": "cd docs && npm install --ignore-scripts && cd ..",
-    "postinstall": "npm run install:docs"
+    "dev": "rollup -c -w"
   },
   "keywords": [
     "form",
