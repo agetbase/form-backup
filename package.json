@@ -1,6 +1,6 @@
 {
   "name": "form-backup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple JavaScript library for auto-saving and restoring form data.",
   "bugs": "https://github.com/agetbase/form-backup/issues",
   "repository": {
