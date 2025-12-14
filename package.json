@@ -1,0 +1,54 @@
+{
+  "name": "form-backup",
+  "version": "1.0.0",
+  "description": "A simple JavaScript library for auto-saving and restoring form data.",
+  "bugs": "https://github.com/agetbase/form-backup/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agetbase/form-backup.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/browser.global.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "browser": "./dist/browser.global.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "dev:docs": "cd docs && npm start && cd ..",
+    "install:docs": "cd docs && npm install --ignore-scripts && cd ..",
+    "postinstall": "npm run install:docs"
+  },
+  "keywords": [
+    "form",
+    "backup",
+    "restore",
+    "autosave",
+    "auto-restore",
+    "form-backup",
+    "form-restore",
+    "form-keeper"
+  ],
+  "author": "agetbase <agetbase@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
+    "@typescript-eslint/parser": "^8.49.0",
+    "eslint": "^8.57.1",
+    "rollup": "^4.53.3",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  }
+}

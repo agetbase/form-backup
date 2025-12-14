@@ -1,0 +1,10 @@
+.header {
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease-out;
+}
+
+.showHeaderBorderBottom {
+  border-bottom-color: var(--vapor-color-border-normal);
+  transition: border-bottom-color 0s;
+}

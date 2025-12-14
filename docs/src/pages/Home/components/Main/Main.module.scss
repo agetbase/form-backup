@@ -1,0 +1,50 @@
+.titleGroup {
+  width: 36rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4rem;
+
+  & > .title {
+    color: var(--vapor-color-foreground-primary-100);
+  }
+}
+
+.usageButton,
+.installationButton {
+  cursor: pointer;
+  height: 2.375rem;
+  font-size: 0.875rem;
+  color: var(--vapor-color-foreground-hint-100);
+  background-color: var(--vapor-color-background-canvas-200);
+}
+
+.isActiveUsageButton {
+  color: var(--vapor-color-foreground-inverse);
+  background-color: var(--vapor-color-background-primary-200);
+}
+
+.isActiveInstallationButton {
+  color: var(--vapor-color-foreground-inverse);
+  background-color: var(--vapor-color-background-primary-200);
+}
+
+.description {
+  font-size: 1.125rem;
+}
+
+.logo {
+  filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3))
+    drop-shadow(0 0 25px rgba(59, 130, 246, 0.25))
+    drop-shadow(0 0 45px rgba(59, 130, 246, 0.2))
+    drop-shadow(0 0 70px rgba(59, 130, 246, 0.15))
+    drop-shadow(0 0 100px rgba(59, 130, 246, 0.1));
+  transition: filter 0.175s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4))
+      drop-shadow(0 0 35px rgba(59, 130, 246, 0.35))
+      drop-shadow(0 0 55px rgba(59, 130, 246, 0.3))
+      drop-shadow(0 0 80px rgba(59, 130, 246, 0.2))
+      drop-shadow(0 0 110px rgba(59, 130, 246, 0.12));
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "../.eslintrc.json",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "jsx-a11y/control-has-associated-label": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/self-closing-comp": "error"
+  }
+}
