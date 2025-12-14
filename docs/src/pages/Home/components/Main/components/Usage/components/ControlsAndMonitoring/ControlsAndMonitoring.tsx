@@ -136,17 +136,9 @@ export default function ControlsAndMonitoring(
                   value={ttl?.toString()}
                   onChange={(e) => {
                     const value = e.target.value;
-                    if (value === '') {
-                      setTTL(0);
-                      return;
-                    }
-                    const numericValue = value.replace(/[^0-9-]/g, '');
-                    if (numericValue === '' || numericValue === '-') {
-                      return;
-                    }
-                    const numValue = Number(numericValue);
-                    if (!isNaN(numValue)) {
-                      setTTL(numValue);
+
+                    if (!isNaN(Number(value))) {
+                      setTTL(Number(value));
                     }
                   }}
                   padding="$200"
