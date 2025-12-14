@@ -68,7 +68,7 @@ export default function Header() {
               />
             </a>
           }
-          backgroundColor="transparent"
+          className={styles.iconButton}
           aria-label="GitHub"
         />
 
@@ -86,7 +86,7 @@ export default function Header() {
               />
             </a>
           }
-          backgroundColor="transparent"
+          className={styles.iconButton}
           aria-label="npm"
         />
       </HStack>

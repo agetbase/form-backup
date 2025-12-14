@@ -51,7 +51,6 @@ export default function Main() {
               <Button
                 render={
                   <Badge
-                    paddingX="$250"
                     shape="pill"
                     className={clsx(
                       styles.usageButton,

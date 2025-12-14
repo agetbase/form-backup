@@ -212,8 +212,8 @@ export default function ControlsAndMonitoring(
                 <TextInput
                   id="ttl-readonly-input"
                   readOnly
-                  backgroundColor="$overlay-100"
                   value={formatTTL(remainingTTL)}
+                  className={styles.ttlReadOnlyInput}
                 />
               </LabelGroup>
 

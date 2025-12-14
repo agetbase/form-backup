@@ -4,3 +4,7 @@
   border: 1px solid var(--vapor-color-border-normal, #e1e1e1) !important;
   overflow: auto !important;
 }
+
+.ttlReadOnlyInput {
+  background-color: var(--vapor-color-background-overlay-100);
+}
